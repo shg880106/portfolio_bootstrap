@@ -85,12 +85,12 @@ h1 {
 
 /*Sobre mi*/
 .sobre-mi {
-  height: 500px;
+  height: 800px;
   padding: 10px;  
 }
 
 .sobre-mi .contenedor {
-  max-width: 600px;
+  max-width: 800px;
   text-align: center;
 }
 
