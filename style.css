@@ -23,17 +23,17 @@ h1 {
   font-family: "Rubik Dirt", system-ui;  
 }
 
-.seccion-oscura {
+.section-dark {
   color: white;
   background-color: #1b1b32;
 }
 
-.seccion-clara {
+.section-clear {
   color: black;
   background-color: white;
 }
 
-.seccion-titulo {
+.section-title {
   font-size: 2rem;
   padding: 15px 0;
   font-family: 'Rubik Dirt', cursive;
@@ -83,13 +83,13 @@ h1 {
   color: #615151;
 }
 
-/*Sobre mi*/
-.sobre-mi {
+/*About me*/
+.about-me {
   height: 800px;
   padding: 10px;  
 }
 
-.sobre-mi .contenedor {
+.about-me .contenedor {
   max-width: 800px;
   text-align: center;
 }
@@ -193,22 +193,6 @@ h1 {
   color: black;
   font-size: 60px;
   margin: 10px;;
-}
-
-/* Articulos */
-.articulos {
-  min-height: 500px;
-  padding: 30px;
-}
-
-.articulos .card {
-  width: 80%;
-  max-width: 600px;
-  margin: 20px;
-}
-
-.articulos .card-header {
-  font-weight: bold;
 }
 
 /* Testimonios */
