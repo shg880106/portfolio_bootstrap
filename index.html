@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Saily Hurtado">
     <meta name="description" content="Saily Hurtado's Portfolio">
-    <meta name="keywords" name="HTMl, CSS, JavaScript, React">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Tittle -->
     <title>Saily Hurtado | Portfolio</title>
@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
           </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about-me ">About me</a>
+              <a class="nav-link active" aria-current="page" href="#about-me">About me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
@@ -53,64 +53,85 @@
     
     <!-- Section Hero -->
     <section class="hero align-items-stretch">
-      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-        <img class="hero-imagen-desarrollador rounded-circle" src="img/photo-perfil.png" alt="Photo by Saily Hurtado">
+      <div class="hero-main d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-developer-image rounded-circle" src="img/photo-perfil.png" alt="Photo by Saily Hurtado">
         <h1>Hello, I'm Saily Hurtado</h1>
-        <h2>Software developer</h2>
+        <h2>Full Stack .NET Developer (C# | ASP.NET | Angular | SQL)</h2>
+        <a href="#contact" class="btn btn-hero mt-4">Let's work together <i class="bi bi-arrow-right-circle-fill"></i></a>
       </div>
-      <div class="hero-inferior">
-        <img class="hero-inferior-imagen img-fluid" src="img/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS y JS.">
+      <div class="hero-lower">
+        <img class="hero-lower-image img-fluid" src="img/hero-inferior.svg" alt="Monitor, laptop and HTML, CSS and JS logos.">
       </div>
     </section>
 
     <!-- About me section  -->
     <section id="about-me" class="about-me section-dark">
-      <div class="contenedor">
+      <div class="inner">
         <h2 class="section-title">Meet Saily Hurtado</h2>
-        <p class="seccion-texto">Very professional developer with more than 10 years of experience in software analysis and development of highly available web applications using .net technologies.
-          Results oriented team player with great interpersonal skills, able to handle multiple tasks simultaneously.
-          Always available to work together and/or help colleagues. Able to work under pressure and committed to deliver quality work on time.
-          Always willing to learn new technologies and analyze, design and develop technically challenging projects.</p>
+        <p class="section-text">Full Stack .NET Developer with over 10 years of experience in software development, including strong expertise 
+        in designing and building scalable web applications using C#, ASP.NET Core, and modern frontend frameworks such as Angular. </p>
+        <p class="section-text">Experienced across the full software development lifecycle, from requirements analysis and system design to development, testing, and deployment.
+        Proven ability to deliver high-quality, maintainable solutions using clean code principles and layered architecture. </p>
+        <p class="section-text">Background in Agile environments with hands-on experience in Azure DevOps, Scrum, and Test-Driven Development (TDD). Previous roles as Project Manager and QA have strengthened analytical thinking, problem-solving, and communication skills.</p>
+        <p class="section-text">Results-oriented and collaborative team player, capable of managing multiple priorities, working under pressure, and consistently delivering on time. Passionate about continuous learning and tackling technically challenging projects.</p>
       </div>
     </section>
 
     <!-- Experience section  -->
-     <section class="experiencia section-clear">
+     <section class="experience section-clear">
         <div class="container text-center">
           <div class="row">
             <!-- Web developer -->
-            <div class="columna col-12 col-md-4">
-              <i class="bi bi-laptop"></i>
-              <p class="experiencia-titulo">Web development</p>
-              <p>Looking for new/real challenges in analysis, design and development of web applications using different front-end technologies like angular, JavaScript/typescript, react and/or html/CSS and all Microsoft .net and related technologies preferably in an azure cloud environment.</p>
-              <div class="badges-contenedor">
-                <span class="badge text-bg-primary">HTML</span>
-                <span class="badge text-bg-primary">CSS</span>
-                <span class="badge text-bg-primary">JavaScript</span>
-                <span class="badge text-bg-primary">React</span>
-                <span class="badge text-bg-primary">.Net</span>
+            <div class="column col-12 col-md-4">
+              <i class="bi bi-code-slash"></i>
+              <p class="experience-title">Web development</p>
+              <p>Full Stack development of scalable web applications using modern frontend technologies such as Angular, JavaScript/TypeScript, and React, combined with robust backend solutions based on ASP.NET Core and the .NET ecosystem. </p>
+              <p>Experience building clean, maintainable, and modular applications, with a strong focus on performance, usability, and best practices. Preferably working in cloud-based environments such as Microsoft Azure.</p>
+              <div class="badges-container">
+                <span class="badge text-bg-primary">.NET </span>
+                <span class="badge text-bg-primary">ASP.NET Core</span>
+                <span class="badge text-bg-primary">Angular</span>
+                <span class="badge text-bg-primary">JavaScript / TypeScript</span>
+                <span class="badge text-bg-primary">REST APIs</span>
+                <span class="badge text-bg-primary">Blazor</span>
+                <span class="badge text-bg-primary">HTML / CSS</span>
+                <span class="badge text-bg-primary">Tailwind CSS</span>
               </div>
             </div>
             <!-- Qualifications -->
-            <div class="columna col-12 col-md-4">
-              <i class="bi bi-laptop"></i>
-              <p class="experiencia-titulo">Qualifications</p>
-              <p>Bachelor in Computer Science Engineer with more than 10 years working experience in software analysis and development in .NET and different Frontend technologies related technologies like Angular, JavaScript/Typescript, React and Html/CSS.</p>
-              <div class="badges-contenedor">
-                <span class="badge text-bg-primary">10 years experience</span>
-                <span class="badge text-bg-primary">front-end</span>
-                <span class="badge text-bg-primary">Scrum</span>                
+            <div class="column col-12 col-md-4">
+              <i class="bi bi-award"></i>
+              <p class="experience-title">Qualifications</p>
+              <p>Bachelor’s Degree in Computer Science Engineering with over 10 years of experience in software analysis, design, and development. </p>
+              <p>Strong expertise in full-stack development using .NET technologies, combined with modern frontend frameworks such as Angular, JavaScript/TypeScript, React, and HTML/CSS. </p>
+              <p>Solid understanding of software architecture, REST APIs, and Agile methodologies including Scrum.</p>
+              <div class="badges-container">
+                <span class="badge text-bg-primary">Software Architecture</span>
+                <span class="badge text-bg-primary">Object-Oriented Programming (OOP)</span>
+                <span class="badge text-bg-primary">Agile / Scrum</span>
+                <span class="badge text-bg-primary">Test-Driven Development (TDD)</span>
+                <span class="badge text-bg-primary">Clean Code</span>
+                <span class="badge text-bg-primary">SOLID Principles</span>
+                <span class="badge text-bg-primary">Problem Solving</span>
+                <span class="badge text-bg-primary">Full Stack Development</span>
               </div>
             </div>
             <!-- Objectives -->
-            <div class="columna col-12 col-md-4">
-              <i class="bi bi-laptop"></i>
-              <p class="experiencia-titulo">Objectives</p>
-              <p>I always liked how coding works, so I am a coding enthusiast. Since finishing college, I worked as a software developer, using PHP and ExtensionJS. After that I worked with OpenERP and Odoo, developing custom modules for different companies. Lately I have been focused on PM/QA roles, but my passion for coding remains.</p>
-              <div class="badges-contenedor">
-                <span class="badge text-bg-primary">coding enthusiast</span>
-                <span class="badge text-bg-primary">fast learn</span>
-                <span class="badge text-bg-primary">PM/QA roles</span>                
+            <div class="column col-12 col-md-4">
+              <i class="bi bi-lightbulb"></i>
+              <p class="experience-title">Objectives</p>
+              <p>Passionate about software development with a strong interest in building efficient and scalable solutions. </p>
+              <p>Started my career as a developer working with PHP and JavaScript-based frameworks, later expanding into ERP systems like Odoo. In recent years, I gained valuable experience in Project Management and QA roles, strengthening my analytical and communication skills.</p>
+              <p>Currently focused on returning to a full-time development role, where I can apply my technical expertise while continuing to grow and learn new technologies.</p>
+              <div class="badges-container">
+                <span class="badge text-bg-primary">Continuous Learning</span>
+                <span class="badge text-bg-primary">PM/QA roles</span> 
+                <span class="badge text-bg-primary">Team Collaboration</span>
+                <span class="badge text-bg-primary">Adaptability</span>
+                <span class="badge text-bg-primary">Analytical Thinking</span>
+                <span class="badge text-bg-primary">Results-Oriented</span>
+                <span class="badge text-bg-primary">Quality Focus</span>
+                <span class="badge text-bg-primary">Communication Skills</span>
               </div>
             </div>
           </div>
@@ -118,19 +139,19 @@
     </section>
 
     <!-- Projects section -->
-    <section id="projects" class="proyectos-recientes section-clear d-flex flex-column">
-      <h2 class="section-title texto-negro">My recent projects</h2>
-      <h3 class="seccion-descripcion">These are some projects I have recently created and collaborated...</h3>
+    <section id="projects" class="recent-projects section-clear d-flex flex-column">
+      <h2 class="section-title text-black">My recent projects</h2>
+      <h3 class="section-description">These are some projects I have recently created and collaborated on.</h3>
       <!-- Project Gallery -->
-      <div class="container text-center proyectos-contenedor">
+      <div class="container text-center projects-container">
         <div class="row">
           <!-- Project 1-->
           <div class="col-12 col-md-6 col-lg-6">
-            <div class="proyecto">
+            <div class="project">
               <img src="img/proyecto1.png" alt="Project 1">
               <div class="overlay">
                 <p>Portfolio</p>
-                <div class="iconos-contenedor">
+                <div class="icons-container">
                   <a href="https://github.com/shg880106/portfolio_bootstrap" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-github"></i>
                   </a>
@@ -140,11 +161,11 @@
           </div>          
           <!-- Project 2-->
           <div class="col-12 col-md-6 col-lg-6">
-            <div class="proyecto">
+            <div class="project">
               <img src="img/peopletrack.png" alt="Project 4">
               <div class="overlay">
                 <p>PeopleTrack</p>
-                <div class="iconos-contenedor">
+                <div class="icons-container">
                   <a href="https://play.google.com/store/apps/details?id=com.peopletrack&hl=nl" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-google-play"></i>
                   </a>
@@ -156,11 +177,11 @@
         <div class="row">
           <!-- Project 3-->
           <div class="col-12 col-md-6 col-lg-6">
-            <div class="proyecto">
+            <div class="project">
               <img src="img/escapology.png" alt="Project 5">
               <div class="overlay">
                 <p>Escapology</p>
-                <div class="iconos-contenedor">                  
+                <div class="icons-container">                  
                   <a href="https://www.escapology.com/" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-laptop"></i>
                   </a>
@@ -170,11 +191,11 @@
           </div>
           <!-- Project 4-->
           <div class="col-12 col-md-6 col-lg-6">
-            <div class="proyecto">
+            <div class="project">
               <img src="img/cleanetto.png" alt="Project 6">
               <div class="overlay">
                 <p>Cleanetto</p>
-                <div class="iconos-contenedor">                  
+                <div class="icons-container">                  
                   <a href="https://play.google.com/store/apps/details?id=com.app.cleanetto&hl=es_US" target="_blank" rel="noopener noreferrer">
                     <i class="bi bi-google-play"></i>
                   </a>
@@ -187,67 +208,87 @@
     </section>
 
     <!-- Testimonials section -->
-    <section id="testimonials" class="testimonios section-clear">
+    <section id="testimonials" class="testimonials-section section-clear">
       <h2 class="section-title">Testimonials</h2>
-      <h3 class="seccion-descripcion">These are some testimonials from my colleagues and clients</h3>
-      <!-- Carrusel -->
-      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <h3 class="section-description">These are some testimonials from my colleagues and clients.</h3>
+      <!-- Carousel -->
+      <div id="testimonials-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="img/cliente1.png" alt="Foto del Cliente 1">
-              <p class="testimonio-texto">Saily is very professional and highly committed with delivery results. She can guide a project from start to end and manage progressive results in the development process.</p>
-              <div class="testimonio-info">
-                <p class="cliente">Pavel Mena</p>
-                <p class="cargo">Senior Software Engineer, Group Manager at NTSprint</p>
+              <img class="testimonial-image rounded-circle" src="img/cliente1.png" alt="Client 1 photo">
+              <p class="testimonial-text">Saily is very professional and highly committed with delivery results. She can guide a project from start to end and manage progressive results in the development process.</p>
+              <div class="testimonial-info">
+                <p class="client">Pavel Mena</p>
+                <p class="position">Senior Software Engineer, Group Manager at NTSprint</p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="img/cliente2.png" alt="Foto del Cliente 2">
-              <p class="testimonio-texto">Saily is an excellent professional, has the ability to work team with experience in software development and project leadership.</p>
-              <div class="testimonio-info">
-                <p class="cliente">Meralys Vilches Rodríguez</p>
-                <p class="cargo">Software Developer DBA</p>
+              <img class="testimonial-image rounded-circle" src="img/cliente2.png" alt="Client 2 photo">
+              <p class="testimonial-text">Saily is an excellent professional, has the ability to work team with experience in software development and project leadership.</p>
+              <div class="testimonial-info">
+                <p class="client">Meralys Vilches Rodríguez</p>
+                <p class="position">Software Developer DBA</p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="img/cliente3.png" alt="Foto del Cliente 3">
-              <p class="testimonio-texto">Saily has leadership skills, interpersonal skills, and technical skills. All of that together allowed her to manage a team of multiple project managers leading projects with high technical complexity and tight deadlines, always delivering high-quality work. She has a growth mindset and always finds time to study new technologies and stay up to date.</p>
-              <div class="testimonio-info">
-                <p class="cliente">Eduardo Noriega</p>
-                <p class="cargo">CO-founder of the company NTSprint</p>
+              <img class="testimonial-image rounded-circle" src="img/cliente3.png" alt="Client 3 photo">
+              <p class="testimonial-text">Saily has leadership skills, interpersonal skills, and technical skills. All of that together allowed her to manage a team of multiple project managers leading projects with high technical complexity and tight deadlines, always delivering high-quality work. She has a growth mindset and always finds time to study new technologies and stay up to date.</p>
+              <div class="testimonial-info">
+                <p class="client">Eduardo Noriega</p>
+                <p class="position">CO-founder of the company NTSprint</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonial-image rounded-circle" src="img/cliente4.png" alt="Client 4 photo">
+              <p class="testimonial-text">A highly adaptable and analytical professional, Saily quickly mastered new technologies and consistently delivered strong results in both Angular and .NET development.</p>
+              <div class="testimonial-info">
+                <p class="client">Kristof Evaert</p>
+                <p class="position">Group Manager at Trescal</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonial-image rounded-circle" src="img/cliente5.png" alt="Client 5 photo">
+              <p class="testimonial-text">During her internship, Saily proved to be a highly capable full-stack developer. I was particularly impressed by her analytical mindset and her ability to manage the project scope and milestones effectively. She has a solid grasp of the development lifecycle and a professional work ethic. She would be a strong asset to any IT team.</p>
+              <div class="testimonial-info">
+                <p class="client">Sven Lauwens</p>
+                <p class="position">Front-end Developer at Trescal | Angular</p>
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">
-            Anterior
+            Previous
           </span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">
-            Siguiente
+            Next
           </span>
         </button>
       </div>
     </section>
 
     <!-- Contact section -->
-    <section id="contact" class="contacto section-dark">
+    <section id="contact" class="contact-section section-dark">
       <div class="container">
-        <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="container text-center rectangle d-flex justify-content-evenly">
           <div class="row">
             <div class="col-12 col-md-4 section-title">
               Let's talk!
             </div>
-            <div class="col-12 col-md-4 description">
+            <div class="col-12 col-md-4 descripcion">
               Contact me to start your web development project and I will make your vision come true.
             </div>
             <div class="col-12 col-md-4">
@@ -263,11 +304,11 @@
       </div>
     </section>
 
-    <!-- Footer (pie de página) -->
+    <!-- Footer -->
     <footer class="section-dark d-flex flex-column align-items-center justify-content-center">
-      <img class="footer-logo" src="img/icono-blanco.svg" alt="Logo del portafolio">
-      <p class="foter-texto text-center">I learn and create every day.<br>Let's create a project together!</p>
-      <div class="iconos-redes-sociales d-flex align-items-center justify-content-center">
+      <img class="footer-logo" src="img/icono-blanco.svg" alt="Portfolio logo">
+      <p class="footer-text text-center">I learn and create every day.<br>Let's create a project together!</p>
+      <div class="social-icons d-flex align-items-center justify-content-center">
         <a href="https://github.com/shg880106" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-github"></i>
         </a>
@@ -278,7 +319,7 @@
           <i class="bi bi-envelope"></i>
         </a>
       </div>
-      <div class="derechos-de-autor">
+      <div class="copyright">
         Created by Saily Hurtado (2024) &#169;
       </div>
     </footer>
