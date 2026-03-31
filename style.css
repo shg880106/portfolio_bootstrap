@@ -30,7 +30,7 @@ html {
   transition: color 0.2s ease;
 }
 
-.navbar .nav-link::after {
+.navbar .nav-link:not(.dropdown-toggle)::after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -42,14 +42,71 @@ html {
   transition: width 0.2s ease;
 }
 
-.navbar .nav-link:hover::after,
-.navbar .nav-link.active::after {
+.navbar .nav-link:not(.dropdown-toggle):hover::after,
+.navbar .nav-link:not(.dropdown-toggle).active::after {
   width: 60%;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
   color: #7ade30 !important;
+}
+
+/* Language toggle */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: auto;
+  padding-left: 1.5rem;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.8px;
+  padding: 2px 5px;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+  color: #7ade30;
+  border-bottom-color: #7ade30;
+}
+
+.lang-sep {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.7rem;
+  padding: 0 1px;
+}
+
+/* CV Dropdown */
+.cv-dropdown {
+  background-color: #1b1b32;
+  border: 1px solid rgba(122, 222, 48, 0.3);
+  min-width: 160px;
+}
+
+.cv-dropdown .dropdown-item {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.cv-dropdown .dropdown-item:hover {
+  color: #7ade30;
+  background-color: rgba(122, 222, 48, 0.1);
+}
+
+.cv-dropdown .dropdown-item i {
+  color: #7ade30;
 }
 
 /* General styles */

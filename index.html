@@ -35,18 +35,40 @@
           </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about-me">About me</a>
+              <a class="nav-link active" aria-current="page" href="#about-me" data-i18n="nav-about">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#projects" data-i18n="nav-projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
+              <a class="nav-link" href="#testimonials" data-i18n="nav-testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact" data-i18n="nav-contact">Contact</a>
             </li>
-          </ul>          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CV
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end cv-dropdown">
+                <li>
+                  <a class="dropdown-item" href="cv/cv-en.pdf" download="Saily_Hurtado_CV_EN.pdf">
+                    <i class="bi bi-file-earmark-pdf-fill me-2"></i>English
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cv/cv-nl.pdf" download="Saily_Hurtado_CV_NL.pdf">
+                    <i class="bi bi-file-earmark-pdf-fill me-2"></i>Nederlands
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="lang-toggle">
+            <button class="lang-btn active" id="btn-lang-en" onclick="setLang('en')">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-btn" id="btn-lang-nl" onclick="setLang('nl')">NL</button>
+          </div>
         </div>
       </div>
     </nav>
@@ -55,9 +77,9 @@
     <section class="hero align-items-stretch">
       <div class="hero-main d-flex flex-column justify-content-center align-items-center">
         <img class="hero-developer-image rounded-circle" src="img/photo-perfil.png" alt="Photo by Saily Hurtado">
-        <h1>Hello, I'm Saily Hurtado</h1>
-        <h2>Full Stack .NET Developer (C# | ASP.NET | Angular | SQL)</h2>
-        <a href="#contact" class="btn btn-hero mt-4">Let's work together <i class="bi bi-arrow-right-circle-fill"></i></a>
+        <h1 data-i18n="hero-h1">Hello, I'm Saily Hurtado</h1>
+        <h2 data-i18n="hero-h2">Full Stack .NET Developer (C# | ASP.NET | Angular | SQL)</h2>
+        <a href="#contact" class="btn btn-hero mt-4"><span data-i18n="hero-cta">Let's work together</span> <i class="bi bi-arrow-right-circle-fill"></i></a>
       </div>
       <div class="hero-lower">
         <img class="hero-lower-image img-fluid" src="img/hero-inferior.svg" alt="Monitor, laptop and HTML, CSS and JS logos.">
@@ -67,13 +89,11 @@
     <!-- About me section  -->
     <section id="about-me" class="about-me section-dark">
       <div class="inner">
-        <h2 class="section-title">Meet Saily Hurtado</h2>
-        <p class="section-text">Full Stack .NET Developer with over 10 years of experience in software development, including strong expertise 
-        in designing and building scalable web applications using C#, ASP.NET Core, and modern frontend frameworks such as Angular. </p>
-        <p class="section-text">Experienced across the full software development lifecycle, from requirements analysis and system design to development, testing, and deployment.
-        Proven ability to deliver high-quality, maintainable solutions using clean code principles and layered architecture. </p>
-        <p class="section-text">Background in Agile environments with hands-on experience in Azure DevOps, Scrum, and Test-Driven Development (TDD). Previous roles as Project Manager and QA have strengthened analytical thinking, problem-solving, and communication skills.</p>
-        <p class="section-text">Results-oriented and collaborative team player, capable of managing multiple priorities, working under pressure, and consistently delivering on time. Passionate about continuous learning and tackling technically challenging projects.</p>
+        <h2 class="section-title" data-i18n="about-title">Meet Saily Hurtado</h2>
+        <p class="section-text" data-i18n="about-p1">Full Stack .NET Developer with over 10 years of experience in software development, including strong expertise in designing and building scalable web applications using C#, ASP.NET Core, and modern frontend frameworks such as Angular.</p>
+        <p class="section-text" data-i18n="about-p2">Experienced across the full software development lifecycle, from requirements analysis and system design to development, testing, and deployment. Proven ability to deliver high-quality, maintainable solutions using clean code principles and layered architecture.</p>
+        <p class="section-text" data-i18n="about-p3">Background in Agile environments with hands-on experience in Azure DevOps, Scrum, and Test-Driven Development (TDD). Previous roles as Project Manager and QA have strengthened analytical thinking, problem-solving, and communication skills.</p>
+        <p class="section-text" data-i18n="about-p4">Results-oriented and collaborative team player, capable of managing multiple priorities, working under pressure, and consistently delivering on time. Passionate about continuous learning and tackling technically challenging projects.</p>
       </div>
     </section>
 
@@ -84,9 +104,9 @@
             <!-- Web developer -->
             <div class="column col-12 col-md-4">
               <i class="bi bi-code-slash"></i>
-              <p class="experience-title">Web development</p>
-              <p>Full Stack development of scalable web applications using modern frontend technologies such as Angular, JavaScript/TypeScript, and React, combined with robust backend solutions based on ASP.NET Core and the .NET ecosystem. </p>
-              <p>Experience building clean, maintainable, and modular applications, with a strong focus on performance, usability, and best practices. Preferably working in cloud-based environments such as Microsoft Azure.</p>
+              <p class="experience-title" data-i18n="exp-web-title">Web development</p>
+              <p data-i18n="exp-web-p1">Full Stack development of scalable web applications using modern frontend technologies such as Angular, JavaScript/TypeScript, and React, combined with robust backend solutions based on ASP.NET Core and the .NET ecosystem.</p>
+              <p data-i18n="exp-web-p2">Experience building clean, maintainable, and modular applications, with a strong focus on performance, usability, and best practices. Preferably working in cloud-based environments such as Microsoft Azure.</p>
               <div class="badges-container">
                 <span class="badge text-bg-primary">.NET </span>
                 <span class="badge text-bg-primary">ASP.NET Core</span>
@@ -101,10 +121,10 @@
             <!-- Qualifications -->
             <div class="column col-12 col-md-4">
               <i class="bi bi-award"></i>
-              <p class="experience-title">Qualifications</p>
-              <p>Bachelor’s Degree in Computer Science Engineering with over 10 years of experience in software analysis, design, and development. </p>
-              <p>Strong expertise in full-stack development using .NET technologies, combined with modern frontend frameworks such as Angular, JavaScript/TypeScript, React, and HTML/CSS. </p>
-              <p>Solid understanding of software architecture, REST APIs, and Agile methodologies including Scrum.</p>
+              <p class="experience-title" data-i18n="exp-qual-title">Qualifications</p>
+              <p data-i18n="exp-qual-p1">Bachelor's Degree in Computer Science Engineering with over 10 years of experience in software analysis, design, and development.</p>
+              <p data-i18n="exp-qual-p2">Strong expertise in full-stack development using .NET technologies, combined with modern frontend frameworks such as Angular, JavaScript/TypeScript, React, and HTML/CSS.</p>
+              <p data-i18n="exp-qual-p3">Solid understanding of software architecture, REST APIs, and Agile methodologies including Scrum.</p>
               <div class="badges-container">
                 <span class="badge text-bg-primary">Software Architecture</span>
                 <span class="badge text-bg-primary">Object-Oriented Programming (OOP)</span>
@@ -119,10 +139,10 @@
             <!-- Objectives -->
             <div class="column col-12 col-md-4">
               <i class="bi bi-lightbulb"></i>
-              <p class="experience-title">Objectives</p>
-              <p>Passionate about software development with a strong interest in building efficient and scalable solutions. </p>
-              <p>Started my career as a developer working with PHP and JavaScript-based frameworks, later expanding into ERP systems like Odoo. In recent years, I gained valuable experience in Project Management and QA roles, strengthening my analytical and communication skills.</p>
-              <p>Currently focused on returning to a full-time development role, where I can apply my technical expertise while continuing to grow and learn new technologies.</p>
+              <p class="experience-title" data-i18n="exp-obj-title">Objectives</p>
+              <p data-i18n="exp-obj-p1">Passionate about software development with a strong interest in building efficient and scalable solutions.</p>
+              <p data-i18n="exp-obj-p2">Started my career as a developer working with PHP and JavaScript-based frameworks, later expanding into ERP systems like Odoo. In recent years, I gained valuable experience in Project Management and QA roles, strengthening my analytical and communication skills.</p>
+              <p data-i18n="exp-obj-p3">Currently focused on returning to a full-time development role, where I can apply my technical expertise while continuing to grow and learn new technologies.</p>
               <div class="badges-container">
                 <span class="badge text-bg-primary">Continuous Learning</span>
                 <span class="badge text-bg-primary">PM/QA roles</span> 
@@ -140,8 +160,8 @@
 
     <!-- Projects section -->
     <section id="projects" class="recent-projects section-clear d-flex flex-column">
-      <h2 class="section-title text-black">My recent projects</h2>
-      <h3 class="section-description">These are some projects I have recently created and collaborated on.</h3>
+      <h2 class="section-title text-black" data-i18n="proj-title">My recent projects</h2>
+      <h3 class="section-description" data-i18n="proj-desc">These are some projects I have recently created and collaborated on.</h3>
       <!-- Project Gallery -->
       <div class="container text-center projects-container">
         <div class="row">
@@ -209,8 +229,8 @@
 
     <!-- Testimonials section -->
     <section id="testimonials" class="testimonials-section section-clear">
-      <h2 class="section-title">Testimonials</h2>
-      <h3 class="section-description">These are some testimonials from my colleagues and clients.</h3>
+      <h2 class="section-title" data-i18n="test-title">Testimonials</h2>
+      <h3 class="section-description" data-i18n="test-desc">These are some testimonials from my colleagues and clients.</h3>
       <!-- Carousel -->
       <div id="testimonials-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -285,16 +305,16 @@
       <div class="container">
         <div class="container text-center rectangle d-flex justify-content-evenly">
           <div class="row">
-            <div class="col-12 col-md-4 section-title">
+            <div class="col-12 col-md-4 section-title" data-i18n="contact-title">
               Let's talk!
             </div>
-            <div class="col-12 col-md-4 descripcion">
+            <div class="col-12 col-md-4 descripcion" data-i18n="contact-desc">
               Contact me to start your web development project and I will make your vision come true.
             </div>
             <div class="col-12 col-md-4">
               <a href="mailto:sailyhurtado@gmail.com">
                 <button type="button">
-                  Contact
+                  <span data-i18n="contact-btn">Contact</span>
                   <i class="bi bi-envelope-check-fill"></i>
                 </button>
               </a>
@@ -307,7 +327,7 @@
     <!-- Footer -->
     <footer class="section-dark d-flex flex-column align-items-center justify-content-center">
       <img class="footer-logo" src="img/icono-blanco.svg" alt="Portfolio logo">
-      <p class="footer-text text-center">I learn and create every day.<br>Let's create a project together!</p>
+      <p class="footer-text text-center" data-i18n="footer-text">I learn and create every day.<br>Let's create a project together!</p>
       <div class="social-icons d-flex align-items-center justify-content-center">
         <a href="https://github.com/shg880106" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-github"></i>
@@ -324,6 +344,8 @@
       </div>
     </footer>
 
+    <!-- Language switcher -->
+    <script src="lang.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
